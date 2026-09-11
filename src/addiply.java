@@ -1,14 +1,16 @@
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 
-class addiply
+public class addiply
 {
      static void main(String[] args) 
     {
-        Scanner s = new Scanner(System.in);
-        int testCases = s.nextInt();
+       // File myFile = new File("input.txt");
+        Scanner s = new Scanner(myFile);
+        int times = s.nextInt();
 
-        for(int i = 0; i < testCases; i++)
+        for(int i = 0; i < times; i++)
         {
             int a = s.nextInt();
             int b = s.nextInt();
